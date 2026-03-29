@@ -1,0 +1,53 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  padding: 5px;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.square {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 5rem;
+  height: 5rem;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+#reset {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 5px;
+}
+
+#reset:hover {
+  cursor: pointer;
+}
+
+#reset:active {
+  background-color: red;
+}
