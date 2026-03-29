@@ -1,6 +1,6 @@
 ## Overview
 
-### Gameplay Mechanic
+### Gameplay Mechanics | (In-Progress)
 - Users should be able to choose whether they'd like to play as 'X' or 'O'.
 - There should be hover and focus states for interactive elements.
 - Users should be able to reset the state of the game at any point.
