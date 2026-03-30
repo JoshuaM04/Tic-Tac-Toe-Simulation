@@ -40,16 +40,12 @@ h2 {
   padding: 10px;
   font-size: 30px;
   text-align: center;
-  background: -webkit-linear-gradient(90deg,rgba(146, 146, 156, 1) 35%, rgba(3, 45, 89, 1) 100%);
-  background: -moz-linear-gradient(90deg,rgba(146, 146, 156, 1) 35%, rgba(3, 45, 89, 1) 100%);
-  background: linear-gradient(90deg,rgba(146, 146, 156, 1) 35%, rgba(3, 45, 89, 1) 100%);
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .square:hover {
   cursor: pointer;
-  background: -webkit-linear-gradient(90deg,rgba(101, 101, 107, 1) 35%, rgba(1, 23, 46, 1) 100%);
-  background: -moz-linear-gradient(90deg,rgba(101, 101, 107, 1) 35%, rgba(1, 23, 46, 1) 100%);
-  background: linear-gradient(90deg,rgba(101, 101, 107, 1) 35%, rgba(1, 23, 46, 1) 100%);
+  background: radial-gradient(circle,rgba(168, 113, 136, 1) 0%, rgba(99, 132, 176, 1) 100%);
 }
 
 #reset {
@@ -58,14 +54,9 @@ h2 {
   border-radius: 5px;
   margin-top: 2rem;
   padding: 5px;
-  background: -webkit-linear-gradient(90deg,rgba(145, 137, 137, 1) 0%, rgba(212, 39, 0, 1) 100%);
-  background: -moz-linear-gradient(90deg,rgba(145, 137, 137, 1) 0%, rgba(212, 39, 0, 1) 100%);
-  background: linear-gradient(90deg,rgba(145, 137, 137, 1) 0%, rgba(212, 39, 0, 1) 100%);
+  background-color: red;
 }
 
 #reset:hover {
   cursor: pointer;
-  background: -webkit-linear-gradient(90deg,rgba(92, 86, 86, 1) 0%, rgba(138, 25, 0, 1) 100%);
-  background: -moz-linear-gradient(90deg,rgba(92, 86, 86, 1) 0%, rgba(138, 25, 0, 1) 100%);
-  background: linear-gradient(90deg,rgba(92, 86, 86, 1) 0%, rgba(138, 25, 0, 1) 100%);
 }

@@ -158,7 +158,7 @@ export default function Board() {
       {
         boxes.map((item, rowIndex) => (
           item.map((subItem, colIndex) => (
-          <button key={colIndex} disabled={!!subItem} onClick={() => handleMove(rowIndex, colIndex)} role="button" className="square">{subItem}</button>
+          <button style={{color: subItem === "X" ? "red" : "green"}} key={colIndex} disabled={!!subItem} onClick={() => handleMove(rowIndex, colIndex)} role="button" className="square">{subItem}</button>
         ))))
       }
       </div>
