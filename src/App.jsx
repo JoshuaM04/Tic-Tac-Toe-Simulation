@@ -152,7 +152,7 @@ export default function Board() {
   return (
     <div className="main-container">
       <h1>Tic-Tac-Toe</h1>
-      <h2>{haveDraw ? "Draw" : (haveWinner ? `Winner: ${winner}` : `Next Player: ${currentPlayer}`)}</h2>
+      <h2>{haveDraw ? "Draw" : (haveWinner ? `Winner: ${winner}` : <div>Current Player: <span style={{color: currentPlayer === "X" ? "red" : "green"}}>{currentPlayer}</span></div>)}</h2>
       
       <div className="grid-container">
       {
