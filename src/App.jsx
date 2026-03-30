@@ -10,7 +10,7 @@ export default function Board() {
   const [boxes, setBoxes] = useState(Array.from({length: boardSize}, () => Array(boardSize).fill(undefined)));
   
   const [haveWinner, setHaveWinner] = useState(false);
-  const [winner, setWinner] = useState();
+  const [winner, setWinner] = useState(undefined);
 
   const [haveDraw, setHaveDraw] = useState(false);
 
@@ -131,21 +131,21 @@ export default function Board() {
       setWinner("O");
 
       buttons.forEach(btn => btn.disabled = true);
-    }
+    } else {
+      // Detect a draw
+      let count = 0;
 
-    // Detect a draw
-    let count = 0;
-
-    for (const arr of boxes) {
-      for (const element of arr) {
-        if (element) {
-          count++;
+      for (const arr of boxes) {
+        for (const element of arr) {
+          if (element) {
+            count++;
+          }
         }
       }
-    }
 
-    if (count === 9 && haveWinner === false) {
-      setHaveDraw(true);
+      if (count === 9 && haveWinner === false && winner === undefined) {
+        setHaveDraw(true);
+      }
     }
   }
 
