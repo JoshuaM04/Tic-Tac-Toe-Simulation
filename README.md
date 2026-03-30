@@ -7,6 +7,5 @@
 - The game should correctly display the winning player.
 - The game should display that theres a 'Draw' if all slots are filled and there is no winning pattern.
 
-### Screenshot
-
-![](src/assets/solution.png)
+### Links
+- Live Site URL: [Vercel](https://tic-tac-toe-simulation.vercel.app/)
